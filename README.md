@@ -1,6 +1,4 @@
-# FLOOD DETECTION INTEGRATING SPECTRAL WATER INDICES (FLOODSIS)
-
-# Projeto Nome
+# FLOOd Detection Integrating Spetral water Indices (FLOODSIS)
 
 ![Banner do Projeto](https://via.placeholder.com/1000x300.png?text=Banner+do+Projeto)
 
