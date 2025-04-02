@@ -1,11 +1,11 @@
-# FLOODSIS - FLOOD DETECTION INTEGRATING SPECTRAL INDICES – A TOOL FOR OPEN WATER MAPPING
+# FLOOD DETECTION INTEGRATING SPECTRAL WATER INDICES (FLOODSIS)
 
 # Projeto Nome
 
 ![Banner do Projeto](https://via.placeholder.com/1000x300.png?text=Banner+do+Projeto)
 
-# Visão Geral
-
+# Descrição
+- A tool for open water mapping
 
 
 ## 📌 Descrição
