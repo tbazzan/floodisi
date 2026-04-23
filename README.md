@@ -17,16 +17,11 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 - Aplica a correção em cada mapa limiarizado derivados dos índices espectrais
 - Integra os mapas limiarizados em um único mapa de áreas inundadas
 
-## 🚀 Tecnologias Utilizadas
+## Aplicações
 
-- **[Linguagem/Framework 1](https://link-da-documentacao.com)**
-- **[Linguagem/Framework 2](https://link-da-documentacao.com)**
-- **[Ferramenta/Plataforma 3](https://link-da-documentacao.com)**
-
-## 📷 Capturas de Tela
-
-![Screenshot 1](https://via.placeholder.com/800x400.png?text=Screenshot+1)
-![Screenshot 2](https://via.placeholder.com/800x400.png?text=Screenshot+2)
+- Avaliação do risco de inundações em regiões sensíveis ao clima.
+- Planejamento de resposta a emergências e desenvolvimento de resiliência.
+- Integração com sistemas de monitoramento hidrológico em tempo real.
 
 ## 📦 Instalação
 
