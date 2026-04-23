@@ -41,7 +41,3 @@ Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazz
 ## Licença
 
 Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
-
----
-
-_Mantenedor: [Seu Nome](https://github.com/tbazzan)_ 🚀
