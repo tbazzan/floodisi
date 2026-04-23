@@ -8,20 +8,20 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 
 ## Principais características:
 
-- Importa imagem multiespectral
-- Fonece limiares adaptativos (default)
-- Fonece limiares para remoção de ruídos (default)
-- Calcula 11 índices espectrais da água com base nas bandas espectrais da imagem importada
-- Calcula e fornece as camadas para filtragem baseada nas bandas espectrais da imagem importada
-- Aplica a limiarização sobre cada índice espectral da água
-- Aplica a correção em cada mapa limiarizado derivados dos índices espectrais
-- Integra os mapas limiarizados em um único mapa de áreas inundadas
+- Importa imagem multiespectral.
+- Fonece limiares adaptativos (default).
+- Fonece limiares para remoção de ruídos (default).
+- Calcula 11 índices espectrais da água com base nas bandas espectrais da imagem importada.
+- Calcula e fornece as camadas para filtragem baseada nas bandas espectrais da imagem importada.
+- Aplica a limiarização sobre cada índice espectral da água.
+- Aplica a correção em cada mapa limiarizado derivados dos índices espectrais.
+- Integra os mapas limiarizados em um único mapa de áreas inundadas, Integrated Water Map (IWM).
+- Calcula a área inundadas de cada índice espectral da água limiarizado e do IWM.
 
 ## Aplicações:
 
-- Avaliação do risco de inundações em regiões sensíveis ao clima.
-- Planejamento de resposta a emergências e desenvolvimento de resiliência.
-- Integração com sistemas de monitoramento hidrológico em tempo real.
+- Mapeamento rápido e robusto de inundações
+- Forncecimento de mapas de inundações para aplicações operacionais no monitoramento de desastres e na gestão de riscos
 
 ## O conjunto de códigos inclui:
 
