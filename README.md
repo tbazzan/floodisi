@@ -1,6 +1,6 @@
 # FLOOd Detection Integrating Spetral water Indices (FLOODISI)
 
-![Banner do Projeto](https://via.placeholder.com/1000x300.png?text=Banner+do+Projeto)
+![FLOODISI Banner](floodisi_image.png)
 
 # Overview
 - O FLOODISI é uma abordagem inovadora projetada para superar os desafios das imagens ópticas cobertas por nuvens no mapeamento de inundações. Ao integrar índices espectrais, hidrologia e técnicas de aprendizado de máquina, o CADIM permite a detecção precisa de áreas inundadas e aprimora a resposta a emergências em regiões propensas a inundações.
