@@ -30,7 +30,7 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 
 ## Referências e Citações:
 
-T Bazzan, CD Rennó, EW Reckziegel1, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
+T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
 
 ## Como Contribuir
 
