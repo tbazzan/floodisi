@@ -32,19 +32,13 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 
 T Bazzan, CD Rennó, EW Reckziegel1, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
 
+## Como Contribuir
+
 Sinta-se à vontade para contribuir! Se tiver sugestões, não hesite em abrir uma issue ou um pull request.
 
 Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazzan@gmail.com
 
-## 🛠 Como Contribuir
-
-1. Faça um _fork_ do projeto.
-2. Crie uma nova _branch_: `git checkout -b minha-branch`
-3. Faça suas alterações e _commit_: `git commit -m 'Minha contribuição'`
-4. Envie para o repositório remoto: `git push origin minha-branch`
-5. Abra um **Pull Request**
-
-## 📜 Licença
+## Licença
 
 Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
