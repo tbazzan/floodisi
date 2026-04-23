@@ -2,11 +2,11 @@
 
 Uma rotina para o mapeamento de inundações com integração de múltiplos índices espectrais de água.
 
-## Overview
+## Overview:
 
 - O FLOODISI é uma abordagem inovadora projetada para superar os desafios no mapeamento de inundações com índices espectrais da água. Ao integrar múltiplos índices espectrais de água utilizando limiares adaptativos dentro de um fluxo de trabalho automatizado em R e Python, o FLOODISI que resulta em um Integrated Water Map (IWM) que permite a detecção precisa de áreas inundadas e aprimora a resposta a emergências em regiões propensas a inundações.
 
-## Principais características
+## Principais características:
 
 - Importa imagem multiespectral
 - Fonece limiares adaptativos (default)
@@ -17,27 +17,19 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 - Aplica a correção em cada mapa limiarizado derivados dos índices espectrais
 - Integra os mapas limiarizados em um único mapa de áreas inundadas
 
-## Aplicações
+## Aplicações:
 
 - Avaliação do risco de inundações em regiões sensíveis ao clima.
 - Planejamento de resposta a emergências e desenvolvimento de resiliência.
 - Integração com sistemas de monitoramento hidrológico em tempo real.
 
-## 📦 Instalação
+## Referências e Citações:
 
-```bash
-# Clone este repositório
-git clone https://github.com/usuario/repositorio.git
+T Bazzan, CD Rennó, EW Reckziegel1, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
 
-# Entre no diretório
-cd repositorio
+Sinta-se à vontade para contribuir! Se tiver sugestões, não hesite em abrir uma issue ou um pull request.
 
-# Instale as dependências
-npm install
-
-# Inicie o projeto
-npm start
-```
+Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazzang@gmail.com
 
 ## 🛠 Como Contribuir
 
