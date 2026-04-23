@@ -23,13 +23,18 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 - Planejamento de resposta a emergências e desenvolvimento de resiliência.
 - Integração com sistemas de monitoramento hidrológico em tempo real.
 
+## O conjunto de códigos inclui:
+
+- O arquivo "floodisi.R" contém o código para o R.
+- O arquivo "floodisi.ipynb" contém o código para o Colab/Jupyter para notebooks.
+
 ## Referências e Citações:
 
 T Bazzan, CD Rennó, EW Reckziegel1, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
 
 Sinta-se à vontade para contribuir! Se tiver sugestões, não hesite em abrir uma issue ou um pull request.
 
-Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazzang@gmail.com
+Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazzan@gmail.com
 
 ## 🛠 Como Contribuir
 
