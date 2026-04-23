@@ -1,4 +1,4 @@
-# FLOOd Detection Integrating Spetral water Indices (FLOODISI)
+# FLOOd Detection Integrating Spectral water Indices (FLOODISI)
 
 Uma rotina para o mapeamento de inundações com integração de múltiplos índices espectrais de água.
 
