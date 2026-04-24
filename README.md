@@ -4,7 +4,7 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 
 ## Overview:
 
-- O FLOODISI é uma abordagem inovadora projetada para superar os desafios no mapeamento de inundações com índices espectrais da água. Ao integrar múltiplos índices espectrais de água utilizando limiares adaptativos dentro de um fluxo de trabalho automatizado em R e Python, o FLOODISI que resulta em um Integrated Water Map (IWM) que permite a detecção precisa de áreas inundadas e aprimora a resposta a emergências em regiões propensas a inundações.
+- O FLOODISI é uma abordagem inovadora projetada para superar os desafios no mapeamento de inundações com índices espectrais de água únicos. Ao integrar múltiplos índices espectrais de água utilizando limiares adaptativos dentro de um fluxo de trabalho automatizado em R e Python, o FLOODISI que resulta em um Integrated Water Map (IWM). Isso permite a detecção robusta de áreas inundadas e subsidia atividade operacionais de monitoramento e resposta em áreas propensas à inundações.
 
 ## Principais características:
 
@@ -25,12 +25,14 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 
 ## O conjunto de códigos inclui:
 
-- O arquivo "floodisi.R" contém o código para o R.
-- O arquivo "floodisi.ipynb" contém o código para o Colab/Jupyter para notebooks.
+- O arquivo "floodisi_l8_l9.R" contém o código para o R para dados do Landsat-8/OLI e Landsat-8/OLI-2.
+- O arquivo "floodisi_l8_l9.ipynb" contém o código para o Colab/Jupyter para notebooks para dados do Landsat-8/OLI e Landsat-8/OLI-2.
+- O arquivo "floodisi_s2.R" contém o código para o R para dados do Sentinel-2/MSI.
+- O arquivo "floodisi_s2.ipynb" contém o código para o Colab/Jupyter para notebooks para dados do Sentinel-2/MSI.
 
 ## Referências e Citações:
 
-T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences.
+T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences. 2026.
 
 ## Como Contribuir
 
