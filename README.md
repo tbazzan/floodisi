@@ -1,45 +1,45 @@
 # FLOOd Detection Integrating Spectral water Indices (FLOODISI)
 
-Uma rotina para o mapeamento de inundações com integração de múltiplos índices espectrais de água.
+A new and robust approach to open water mapping.
 
 ## Overview:
 
-- O FLOODISI é uma abordagem inovadora projetada para superar os desafios no mapeamento de inundações com índices espectrais de água únicos. Ao integrar múltiplos índices espectrais de água utilizando limiares adaptativos dentro de um fluxo de trabalho automatizado em R e Python, o FLOODISI que resulta em um Integrated Water Map (IWM). Isso permite a detecção robusta de áreas inundadas e subsidia atividade operacionais de monitoramento e resposta em áreas propensas à inundações.
+- FLOODISI is an innovative approach designed to overcome the challenges of flood mapping using unique spectral water indices. By integrating multiple spectral water indices using adaptive thresholds within an automated workflow in R and Python, FLOODISI produces an Integrated Water Map (IWM). This enables robust detection of flooded areas and supports operational monitoring and response activities in flood-prone areas.
 
-## Principais características:
+## Key Features:
 
-- Importa imagem multiespectral.
-- Fonece limiares adaptativos (default).
-- Fonece limiares para remoção de ruídos (default).
-- Calcula 11 índices espectrais da água com base nas bandas espectrais da imagem importada.
-- Calcula e fornece as camadas para filtragem baseada nas bandas espectrais da imagem importada.
-- Aplica a limiarização sobre cada índice espectral da água.
-- Aplica a correção em cada mapa limiarizado derivados dos índices espectrais.
-- Integra os mapas limiarizados em um único mapa de áreas inundadas, Integrated Water Map (IWM).
-- Calcula a área inundadas de cada índice espectral da água limiarizado e do IWM.
+- Imports multispectral images.
+- Provides adaptive thresholds (default).
+- Provides thresholds for noise removal (default).
+- Calculates 11 spectral water indices based on the spectral bands of the imported image.
+- Calculates and provides layers for filtering based on the spectral bands of the imported image.
+- Applies thresholding to each water spectral index.
+- Applies correction to each thresholded map derived from the spectral indices.
+- Integrates the thresholded maps into a single map of flooded areas, the Integrated Water Map (IWM).
+- Calculates the flooded area for each thresholded water spectral index and the IWM.
 
-## Aplicações:
+## Applications:
 
-- Mapeamento rápido e robusto de inundações
-- Fornecimento de mapas de inundações para aplicações operacionais no monitoramento de desastres e na gestão de riscos
+- Fast and robust flood mapping.
+- Provision of flood maps for operational applications in disaster monitoring and risk management.
 
-## O conjunto de códigos inclui:
+## The code package includes:
 
-- O arquivo "floodisi_l8_l9.R" contém o código para o R para dados do Landsat-8/OLI e Landsat-8/OLI-2.
-- O arquivo "floodisi_l8_l9.ipynb" contém o código para o Colab/Jupyter para notebooks para dados do Landsat-8/OLI e Landsat-8/OLI-2.
-- O arquivo "floodisi_s2.R" contém o código para o R para dados do Sentinel-2/MSI.
-- O arquivo "floodisi_s2.ipynb" contém o código para o Colab/Jupyter para notebooks para dados do Sentinel-2/MSI.
+- The file “floodisi_l8_l9.R” contains R code for Landsat-8/OLI and Landsat-8/OLI-2 data.
+- The file “floodisi_l8_l9.ipynb” contains the code for Colab/Jupyter notebooks for Landsat-8/OLI and Landsat-8/OLI-2 data.
+- The file “floodisi_s2.R” contains the R code for Sentinel-2/MSI data.
+- The file “floodisi_s2.ipynb” contains the code for Colab/Jupyter notebooks for Sentinel-2/MSI data.
 
-## Referências e Citações:
+## References and Citations:
 
 T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli. FLOODISI: Flood Detection Integrating Spectral Water Índices. Geosciences. 2026.
 
-## Como Contribuir
+## How to Contribute:
 
-Sinta-se à vontade para contribuir! Se tiver sugestões, não hesite em abrir uma issue ou um pull request.
+- Feel free to contribute! If you have any suggestions, don’t hesitate to open an issue or submit a pull request.
 
-Para mais informações e discussões, entre em contato com: Thiago Bazzan tbazzan@gmail.com
+- For more information and discussions, please contact: Thiago Bazzan tbazzan@gmail.com
 
 ## Licença
 
-Este projeto está licenciado sob a **MIT License** - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+This project is licensed under the **MIT License**—see the [LICENSE](LICENSE) file for more details.
