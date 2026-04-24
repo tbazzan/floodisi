@@ -21,7 +21,7 @@ Uma rotina para o mapeamento de inundações com integração de múltiplos índ
 ## Aplicações:
 
 - Mapeamento rápido e robusto de inundações
-- Forncecimento de mapas de inundações para aplicações operacionais no monitoramento de desastres e na gestão de riscos
+- Fornecimento de mapas de inundações para aplicações operacionais no monitoramento de desastres e na gestão de riscos
 
 ## O conjunto de códigos inclui:
 
