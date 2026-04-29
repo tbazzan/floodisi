@@ -1,3 +1,5 @@
+<img width="1600" height="800" alt="floodisi_image" src="https://github.com/user-attachments/assets/fcfec3f9-2903-4a84-8f0e-efc3fba3f580" />
+
 # FLOOd Detection Integrating Spectral water Indices (FLOODISI)
 
 A new and robust approach to open water mapping.
