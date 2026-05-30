@@ -1,3 +1,5 @@
+![FLOODISI Logo](floodisi_logo.png)
+
 # FLOODISI - Flood Detection Integrating Spectral Water Indices
 
 A new approach to open-water mapping
