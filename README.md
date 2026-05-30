@@ -1,4 +1,4 @@
-![FLOODISI Logo](images/floodisi_logo.png)
+<img src="images/floodisi_logo.png" width="400">
 
 # FLOOd Detection Integrating Spectral water Indices (FLOODISI)
 
