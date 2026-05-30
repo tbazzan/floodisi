@@ -1,5 +1,3 @@
-![FLOODISI Logo](Floodisi_Image.png)
-
 # FLOOd Detection Integrating Spectral water Indices (FLOODISI)
 
 A new and robust approach to open water mapping.
