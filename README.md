@@ -1,10 +1,8 @@
 ![FLOODISI Logo](floodisi_logo.png)
 
-# FLOODISI - Flood Detection Integrating Spectral Water Indices
-
 ## Overview:
 
-- The FLOODISI is an innovative approach designed to overcome the challenges of flood mapping using unique spectral water indices. By integrating multiple spectral water indices using adaptive thresholds within an automated workflow in R and Python, FLOODISI produces an Integrated Water Map (IWM). This enables robust detection of flooded areas and supports operational monitoring and response activities in flood-prone areas.
+- The FLOODISI (Flood Detection Integrating Spectral Water Indices) is an innovative approach designed to overcome the challenges of flood mapping using unique spectral water indices. By integrating multiple spectral water indices using adaptive thresholds within an automated workflow in R and Python, FLOODISI produces an Integrated Water Map (IWM). This enables robust detection of flooded areas and supports operational monitoring and response activities in flood-prone areas.
 
 ## Key Features:
 
