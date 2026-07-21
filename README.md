@@ -9,7 +9,7 @@
 - Imports multispectral images.
 - Provides adaptive thresholds (default).
 - Provides thresholds for noise removal (default).
-- Calculates 11 spectral water indices based on the spectral bands of the imported image.
+- Calculates 12 spectral water indices based on the spectral bands of the imported image.
 - Calculates and provides layers for filtering based on the spectral bands of the imported image.
 - Applies thresholding to each water spectral index.
 - Applies correction to each thresholded map derived from the spectral indices.
