@@ -30,7 +30,7 @@
 
 ## References and Citations:
 
-T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli, CC Korb. FLOODISI: Flood Detection Integrating Spectral Water Índices. Manuscript under review. 2026.
+T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli, CC Korb. Flood Detection Integrating Spectral Indices (FLOODISI): A novel approach to open-water mapping. Geosciences, 2026, in press.
 
 ## How to Contribute:
 
