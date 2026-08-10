@@ -30,7 +30,7 @@
 
 ## References and Citations:
 
-T Bazzan, CD Rennó, EW Reckziegel, LA Guasselli, CC Korb. Flood Detection Integrating Spectral Indices (FLOODISI): A novel approach to open-water mapping. Geosciences, 2026, in press.
+Bazzan, T.; Rennó, C.D.; Reckziegel, E.W.; Guasselli, L.A.; Korb, C.C. Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping. Geosciences 2026, 16, 325. https://doi.org/10.3390/geosciences16080325
 
 ## How to Contribute:
 
