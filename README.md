@@ -21,12 +21,17 @@
 - Fast and robust flood mapping.
 - Provision of flood maps for operational applications in disaster monitoring and risk management.
 
-## The code package includes:
+## The code package include:
 
 - The file “floodisi_l8_l9.R” contains R code for Landsat-8/OLI and Landsat-8/OLI-2 data.
 - The file “floodisi_l8_l9.ipynb” contains the code for Colab/Jupyter notebooks for Landsat-8/OLI and Landsat-8/OLI-2 data.
 - The file “floodisi_s2.R” contains the R code for Sentinel-2/MSI data.
 - The file “floodisi_s2.ipynb” contains the code for Colab/Jupyter notebooks for Sentinel-2/MSI data.
+
+## The following sample datasets are provided for testing the FLOODISI workflow:
+
+- The file image_l8_l9.tif contains the spectral bands from Landsat 8/OLI data.
+- The file image_s2.tif contains the spectral bands from Sentinel-2/MSI data.
 
 ## References and Citations:
 
