@@ -57,11 +57,11 @@ These datasets allow users to test the workflows before applying FLOODISI to the
 
 2. Select the appropriate workflow:
 
-Landsat 8/9
+### Landsat 8/9
 - R: scripts_R/floodisi_l8_l9_v1.R
 - Python: scripts_Python/floodisi_l8_l9_v1.ipynb
 
-Sentinel-2
+### Sentinel-2
 - R: scripts_R/floodisi_s2_v1.R
 - Python: scripts_Python/floodisi_s2_v1.ipynb
 
