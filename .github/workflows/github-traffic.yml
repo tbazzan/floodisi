@@ -1,0 +1,119 @@
+name: Save GitHub Traffic
+
+on:
+  schedule:
+    # Executa diariamente às 03:15 UTC
+    - cron: "15 3 * * *"
+
+  # Permite executar manualmente
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect-traffic:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Collect GitHub traffic
+        env:
+          GH_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+        run: |
+          mkdir -p statistics
+
+          python <<'PY'
+          import os
+          import csv
+          import json
+          import urllib.request
+          from pathlib import Path
+
+          token = os.environ["GH_TOKEN"]
+          repo = os.environ["REPOSITORY"]
+
+          headers = {
+              "Accept": "application/vnd.github+json",
+              "Authorization": f"Bearer {token}",
+              "X-GitHub-Api-Version": "2026-03-10",
+              "User-Agent": "github-traffic-history"
+          }
+
+          def get(endpoint):
+              req = urllib.request.Request(
+                  f"https://api.github.com/repos/{repo}/{endpoint}",
+                  headers=headers
+              )
+              with urllib.request.urlopen(req) as response:
+                  return json.load(response)
+
+          clones = get("traffic/clones")
+          views = get("traffic/views")
+
+          data = {}
+
+          for item in clones["clones"]:
+              date = item["timestamp"][:10]
+              data.setdefault(date, {})
+              data[date]["clones"] = item["count"]
+              data[date]["unique_cloners"] = item["uniques"]
+
+          for item in views["views"]:
+              date = item["timestamp"][:10]
+              data.setdefault(date, {})
+              data[date]["views"] = item["count"]
+              data[date]["unique_visitors"] = item["uniques"]
+
+          filename = Path("statistics/github_traffic.csv")
+
+          previous = {}
+
+          if filename.exists():
+              with filename.open(newline="", encoding="utf-8") as f:
+                  reader = csv.DictReader(f)
+                  for row in reader:
+                      previous[row["date"]] = row
+
+          for date, values in data.items():
+              previous[date] = {
+                  "date": date,
+                  "clones": values.get("clones", 0),
+                  "unique_cloners": values.get("unique_cloners", 0),
+                  "views": values.get("views", 0),
+                  "unique_visitors": values.get("unique_visitors", 0),
+              }
+
+          with filename.open("w", newline="", encoding="utf-8") as f:
+              fields = [
+                  "date",
+                  "clones",
+                  "unique_cloners",
+                  "views",
+                  "unique_visitors"
+              ]
+
+              writer = csv.DictWriter(f, fieldnames=fields)
+              writer.writeheader()
+
+              for date in sorted(previous):
+                  writer.writerow(previous[date])
+
+          PY
+
+      - name: Commit traffic history
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add statistics/github_traffic.csv
+
+          if git diff --cached --quiet; then
+            echo "No traffic changes."
+          else
+            git commit -m "Update GitHub traffic statistics"
+            git push
+          fi
