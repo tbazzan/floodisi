@@ -27,12 +27,12 @@ The method was developed and evaluated for mapping open floodwater during the Ma
 
 ## Available Workflows:
 
-# Landsat 8/9
+### Landsat 8/9
 
 - scripts_R/floodisi_l8_l9_v1.R — R implementation for Landsat 8 OLI and Landsat 9 OLI-2.
 - scripts_Python/floodisi_l8_l9_v1.ipynb — Python/Jupyter implementation for Landsat 8 OLI and Landsat 9 OLI-2.
 
-# Sentinel-2
+### Sentinel-2
 
 - scripts_R/floodisi_s2_v1.R — R implementation for Sentinel-2 MSI.
 - scripts_Python/floodisi_s2_v1.ipynb — Python/Jupyter implementation for Sentinel-2 MSI.
