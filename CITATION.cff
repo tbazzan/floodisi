@@ -3,7 +3,6 @@ message: "If you use FLOODISI in your research, please cite the following articl
 title: "FLOODISI: Flood Detection Integrating Spectral Water Indices"
 type: software
 authors:
-
 - family-names: "Bazzan"
   given-names: "Thiago"
 - family-names: "Rennó"
