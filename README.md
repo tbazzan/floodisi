@@ -25,25 +25,6 @@ The method was developed and evaluated for mapping open floodwater during the Ma
 - Calculates mapped open-water area for individual indices and the IWM.
 - Available in both R and Python (Jupyter/Google Colab).
 
-## Repository Structure:
-
-floodisi/
-│
-├── data/
-│   ├── image_l8_l9.tif
-│   └── image_s2.tif
-│
-├── scripts_R/
-│   ├── floodisi_l8_l9_v1.R
-│   └── floodisi_s2_v1.R
-│
-├── scripts_Python/
-│   ├── floodisi_l8_l9_v1.ipynb
-│   └── floodisi_s2_v1.ipynb
-│
-├── LICENSE
-└── README.md
-
 ## Available Workflows:
 
 # Landsat 8/9
