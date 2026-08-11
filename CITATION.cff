@@ -4,15 +4,15 @@ title: "FLOODISI: Flood Detection Integrating Spectral Water Indices"
 type: software
 authors:
 
-* family-names: "Bazzan"
+- family-names: "Bazzan"
   given-names: "Thiago"
-* family-names: "Rennó"
+- family-names: "Rennó"
   given-names: "Camilo Daleles"
-* family-names: "Reckziegel"
+- family-names: "Reckziegel"
   given-names: "Elisabete Weber"
-* family-names: "Guasselli"
+- family-names: "Guasselli"
   given-names: "Laurindo Antonio"
-* family-names: "Korb"
+- family-names: "Korb"
   given-names: "Carina Cristiane"
   repository-code: "https://github.com/tbazzan/floodisi"
   license: MIT
