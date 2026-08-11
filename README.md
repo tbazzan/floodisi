@@ -1,6 +1,6 @@
 ![FLOODISI Logo](floodisi_logo.png)
 
-## FLOODISI — Flood Detection Integrating Spectral Water Indices An R and Python framework for open floodwater mapping from Landsat 8/9 and Sentinel-2 multispectral imagery.
+<p align="center"> <strong>Flood Detection Integrating Spectral Water Indices</strong><br> An R and Python framework for open floodwater mapping from Landsat 8/9 and Sentinel-2 multispectral imagery. </p>
 
 ## Overview:
 
