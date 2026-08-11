@@ -4,59 +4,158 @@
 
 ## Overview:
 
-- The FLOODISI (Flood Detection Integrating Spectral Water Indices) is an innovative approach designed to overcome the challenges of flood mapping using individual spectral water indices. By integrating multiple spectral water indices using adaptive thresholds within an automated workflow in R and Python, FLOODISI produces an Integrated Water Map (IWM). This enables robust detection of flooded areas and supports operational monitoring and response activities in flood-prone areas.
+FLOODISI (Flood Detection Integrating Spectral Water Indices) is an approach for open floodwater mapping based on the integration of multiple spectral water indices using adaptive thresholds.
+
+The workflow calculates 12 spectral water indices, applies index-specific thresholding and filtering procedures, and integrates the resulting water maps into a single product: the Integrated Water Map (IWM).
+
+FLOODISI is implemented in R and Python and supports Landsat 8/9 OLI/OLI-2 and Sentinel-2 MSI imagery.
+
+The method was developed and evaluated for mapping open floodwater during the May 2024 floods in southern Brazil.
 
 ## Key Features:
 
-- Imports multispectral images.
-- Provides adaptive thresholds (default).
-- Provides thresholds for noise removal (default).
-- Calculates 12 spectral water indices based on the spectral bands of the imported image.
-- Calculates and provides layers for filtering based on the spectral bands of the imported image.
-- Applies thresholding to each water spectral index.
-- Applies correction to each thresholded map derived from the spectral indices.
-- Integrates the thresholded maps into a single map of flooded areas, the Integrated Water Map (IWM).
-- Calculates the flooded area for each thresholded water spectral index and the IWM.
+- Supports Landsat 8/9 OLI/OLI-2 and Sentinel-2 MSI imagery.
+- Calculates 12 spectral water indices.
+- Provides adaptive thresholds for individual spectral water indices.
+- Provides thresholds for spectral noise filtering.
+- Applies thresholding to each spectral water index.
+- Applies index-specific corrections to reduce false-positive detections.
+- Generates an agreement/frequency map from the spectral water indices.
+- Integrates the corrected water maps into the Integrated Water Map (IWM).
+- Calculates mapped open-water area for individual indices and the IWM.
+- Available in both R and Python (Jupyter/Google Colab).
 
-## Applications:
+## Repository Structure:
 
-- Fast and robust flood mapping.
-- Provision of flood maps for operational applications in disaster monitoring and risk management.
+floodisi/
+│
+├── data/
+│   ├── image_l8_l9.tif
+│   └── image_s2.tif
+│
+├── scripts_R/
+│   ├── floodisi_l8_l9_v1.R
+│   └── floodisi_s2_v1.R
+│
+├── scripts_Python/
+│   ├── floodisi_l8_l9_v1.ipynb
+│   └── floodisi_s2_v1.ipynb
+│
+├── LICENSE
+└── README.md
 
-## The code package includes:
+## Available Workflows:
 
-- The file “floodisi_l8_l9.R” contains R code for Landsat-8/OLI and Landsat-8/OLI-2 data.
-- The file “floodisi_l8_l9.ipynb” contains the code for Colab/Jupyter notebooks for Landsat-8/OLI and Landsat-8/OLI-2 data.
-- The file “floodisi_s2.R” contains the R code for Sentinel-2/MSI data.
-- The file “floodisi_s2.ipynb” contains the code for Colab/Jupyter notebooks for Sentinel-2/MSI data.
+# Landsat 8/9
+
+- scripts_R/floodisi_l8_l9_v1.R — R implementation for Landsat 8 OLI and Landsat 9 OLI-2.
+- scripts_Python/floodisi_l8_l9_v1.ipynb — Python/Jupyter implementation for Landsat 8 OLI and Landsat 9 OLI-2.
+
+# Sentinel-2
+
+- scripts_R/floodisi_s2_v1.R — R implementation for Sentinel-2 MSI.
+- scripts_Python/floodisi_s2_v1.ipynb — Python/Jupyter implementation for Sentinel-2 MSI.
 
 ## The following sample datasets are provided for testing the FLOODISI workflow:
 
 - The file image_l8_l9.tif contains the spectral bands from Landsat 8/OLI data.
 - The file image_s2.tif contains the spectral bands from Sentinel-2/MSI data.
 
+## Sample Data
+
+Sample datasets are provided in the data/ directory for testing the FLOODISI workflow:
+
+- image_l8_l9.tif — sample Landsat 8/9 multispectral image.
+- image_s2.tif — sample Sentinel-2 multispectral image.
+
+These datasets allow users to test the workflows before applying FLOODISI to their own imagery.
+
 ## Quick Start
 
-1. Clone or download the repository.
+1. Clone or download this repository.
+
 2. Select the appropriate workflow:
-   - Landsat 8/9: floodisi_l8_l9_v1.R or floodisi_l8_l9_v1.ipynb
-   - Sentinel-2: floodisi_s2_v1.R or floodisi_s2_v1.ipynb
-3. Use the corresponding sample image in /data.
-4. Define the input/output directories.
+
+Landsat 8/9
+- R: scripts_R/floodisi_l8_l9_v1.R
+- Python: scripts_Python/floodisi_l8_l9_v1.ipynb
+
+Sentinel-2
+- R: scripts_R/floodisi_s2_v1.R
+- Python: scripts_Python/floodisi_s2_v1.ipynb
+
+3. Use the corresponding sample image available in the data/ directory or provide your own multispectral image.
+4. Define the input and output directories in the script/notebook.
 5. Run the workflow.
 
-## References and Citations:
+## Input Data
 
-If you use FLOODISI in your research, please cite:
+FLOODISI requires multispectral imagery containing the spectral bands necessary to calculate the implemented water indices.
+
+The current workflows support:
+
+- Landsat 8 OLI
+- Landsat 9 OLI-2
+- Sentinel-2 MSI
+
+Users applying FLOODISI to their own data should ensure that the input imagery is appropriately preprocessed and that the spectral bands correspond to those expected by the selected workflow.
+
+The sample datasets provided in the data/ directory can be used as references for the expected input structure.
+
+## Outputs
+
+The FLOODISI workflow generates products including:
+
+- Individual spectral water-index layers.
+- Thresholded water maps for each spectral index.
+- Corrected water maps after spectral filtering.
+- Water-detection agreement/frequency map.
+- Integrated Water Map (IWM).
+- Open-water area estimates for individual spectral indices and the IWM.
+
+The IWM represents the final integrated open-water product generated by FLOODISI.
+
+## Applications
+
+FLOODISI can support applications such as:
+
+- Rapid open floodwater mapping.
+- Flood-event analysis.
+- Remote sensing of flood extent.
+- Disaster monitoring.
+- Operational flood-response activities.
+- Hydrological and environmental studies.
+
+## Reference:
 
 Bazzan, T.; Rennó, C.D.; Reckziegel, E.W.; Guasselli, L.A.; Korb, C.C. Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping. Geosciences 2026, 16, 325. https://doi.org/10.3390/geosciences16080325
 
-## How to Contribute:
+## Citation
 
-- Feel free to contribute! If you have any suggestions, don’t hesitate to open an issue or submit a pull request.
+If you use FLOODISI in your research, please cite the publication above.
 
-- For more information and discussions, please contact: Thiago Bazzan tbazzan@gmail.com
+@article{bazzan2026floodisi,
+  title   = {Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping},
+  author  = {Bazzan, T. and Rennó, C. D. and Reckziegel, E. W. and Guasselli, L. A. and Korb, C. C.},
+  journal = {Geosciences},
+  volume  = {16},
+  pages   = {325},
+  year    = {2026},
+  doi     = {10.3390/geosciences16080325}
+}
+
+## Contributing:
+
+- Contributions, suggestions, and improvements are welcome.
+
+- If you identify an issue or would like to suggest a new feature, please open an Issue or submit a Pull Request.
 
 ## License
 
-This project is licensed under the **MIT License**—see the [LICENSE](LICENSE) file for more details.
+This project is distributed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+Thiago Bazzan
+
+- For questions, suggestions, bug reports, or discussions related to FLOODISI, please use the GitHub Issues section or contact the repository maintainer at tbazzan@gmail.com 
