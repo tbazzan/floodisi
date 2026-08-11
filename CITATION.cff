@@ -1,24 +1,20 @@
 cff-version: 1.2.0
 message: "If you use this software, please cite it as below."
-
 authors:
-
-* family-names: "Bazzan"
+- family-names: "Bazzan"
   given-names: "Thiago"
-* family-names: "Rennó"
+- family-names: "Rennó"
   given-names: "Camilo Daleles"
-* family-names: "Reckziegel"
+- family-names: "Reckziegel"
   given-names: "Elisabete Weber"
-* family-names: "Guasselli"
+- family-names: "Guasselli"
   given-names: "Laurindo Antonio"
-* family-names: "Korb"
+- family-names: "Korb"
   given-names: "Carina Cristiane"
-
 title: "FLOODISI: Flood Detection Integrating Spectral Water Indices"
 version: 1.0.0
 date-released: 2026-08-10
 url: "https://github.com/tbazzan/floodisi"
-
 preferred-citation:
 type: article
 authors:
