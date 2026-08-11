@@ -31,6 +31,8 @@ given-names: "Carina Cristiane"
 doi: "10.3390/geosciences16080325"
 journal: "Geosciences"
 month: 8
+start: 1 # First page number
+end: 10 # Last page number
 title: "Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping"
 issue: 8
 volume: 16
