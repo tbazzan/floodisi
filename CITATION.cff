@@ -2,6 +2,10 @@ cff-version: 1.2.0
 message: "If you use FLOODISI in your research, please cite the following article."
 title: "FLOODISI: Flood Detection Integrating Spectral Water Indices"
 type: software
+version: 1.0.0
+date-released: 2026-08-10
+repository-code: https://github.com/tbazzan/floodisi
+license: MIT
 authors:
 - family-names: "Bazzan"
   given-names: "Thiago"
@@ -13,8 +17,25 @@ authors:
   given-names: "Laurindo Antonio"
 - family-names: "Korb"
   given-names: "Carina Cristiane"
+
+preferred-citation:
+type: article
 title: "Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping"
-version: 1.0.0
+authors:
+- family-names: "Bazzan"
+given-names: "Thiago"
+- family-names: "Rennó"
+given-names: "Camilo Daleles"
+- family-names: "Reckziegel"
+given-names: "Elisabete Weber"
+- family-names: "Guasselli"
+given-names: "Laurindo Antonio"
+- family-names: "Korb"
+given-names: "Carina Cristiane"
+journal: "Geosciences"
+year: 2026
+volume: 16
+issue: 8
+article-number: 325
 doi: 10.3390/geosciences16080325
-date-released: 2026-08-10
-url: https://github.com/tbazzan/floodisi
+url: https://doi.org/10.3390/geosciences16080325
