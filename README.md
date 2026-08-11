@@ -35,6 +35,16 @@
 - The file image_l8_l9.tif contains the spectral bands from Landsat 8/OLI data.
 - The file image_s2.tif contains the spectral bands from Sentinel-2/MSI data.
 
+## Quick Start
+
+1. Clone or download the repository.
+2. Select the appropriate workflow:
+   - Landsat 8/9: floodisi_l8_l9_v1.R or floodisi_l8_l9_v1.ipynb
+   - Sentinel-2: floodisi_s2_v1.R or floodisi_s2_v1.ipynb
+3. Use the corresponding sample image in /data.
+4. Define the input/output directories.
+5. Run the workflow.
+
 ## References and Citations:
 
 Bazzan, T.; Rennó, C.D.; Reckziegel, E.W.; Guasselli, L.A.; Korb, C.C. Flood Detection Integrating Spectral Indices (FLOODISI): A Novel Approach to Open-Water Mapping. Geosciences 2026, 16, 325. https://doi.org/10.3390/geosciences16080325
